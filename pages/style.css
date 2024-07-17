@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.main-container {
+    background: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.9rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.sign-in-link {
+    text-decoration: none;
+}
+
+.sign-in {
+    border-radius: 1rem;
+    width: 10rem;
+    background: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.title-holder {
+    border-radius: 1rem;
+    width: auto;
+    background: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 15rem;
+    box-sizing: border-box;
+}
+
+.title-holder-text {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.sign-in-text {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family: 'Lato';
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.order-button {
+    border-radius: 12px;
+    background: #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.order-button-text {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.hero-image {
+    background: url('../assets/images/spaghetti.png') center / cover no-repeat;
+    width: 430px;
+    height: 430px;
+    z-index: 2;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.about-title {
+    font-family: 'Lato';
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.about-description {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-title {
+    font-family: 'Lato';
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.email-button,
+.github-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    background: #ffd700;
+    cursor: pointer;
+}
+
+.sign-in, .order-button, .email-button, .github-button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sign-in:hover, .order-button:hover, .email-button:hover, .github-button:hover {
+    background-color: #ff8566;
+    transform: translateY(-2px);
+}
+
+.sign-in:focus, .order-button:focus, .email-button:focus, .github-button:focus {
+    background-color: #ff8566;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.5);
+}
+
+#mailIcon:hover, #mailIcon:focus, #githubIcon:hover, #githubIcon:focus {
+    color: #ff6347;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+}
+
+.email-text {
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: #000000;
+}
+
+#mailIcon {
+    font-size: 2rem;
+    color: #1E1E1E;
+    margin-left: .7rem;
+}
+
+#githubIcon {
+    font-size: 2rem;
+    color: #1E1E1E;
+    margin-right: .7rem;
+}
+
+.how-it-works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.how-it-works-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.how-it-works-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.how-it-works-image-left {
+    flex: 1;
+    height: 300px;
+    background: url('../assets/images/food2.jpg') center / cover no-repeat;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.how-it-works-image-right {
+    flex: 1;
+    height: 300px;
+    background: url('../assets/images/food1.jpeg') center / cover no-repeat;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.how-it-works-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.how-it-works-title {
+    font-family: 'Lato';
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.how-it-works-description {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+

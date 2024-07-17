@@ -296,4 +296,339 @@ body {
     color: #333333;
 }
 
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
 
+.features-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.features-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.features-image-left {
+    flex: 1;
+    height: 300px;
+    background: url('../assets/images/feature1.jpg') center / cover no-repeat;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.features-image-right {
+    flex: 1;
+    height: 300px;
+    background: url('../assets/images/feature2.jpg') center / cover no-repeat;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.features-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.features-title {
+    font-family: 'Lato';
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.features-description {
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.background-ellipse {
+    filter: blur(63.2px);
+    position: absolute;
+    top: 140px;
+    right: 60px;
+    z-index: 1;
+    width: 553px;
+    height: 541px;
+    background-color: rgba(255, 157, 71, 0.607);
+    border-radius: 6rem;
+}
+
+.footer {
+    border-top: #3F4145 solid 2px;
+    background-color: #f5f5dc;
+    color: #333333;
+    padding: 2rem 5rem;
+    font-size: 1.2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-text span {
+    display: block;
+}
+
+.about-company h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-company p {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: #333333;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.4s ease all;
+}
+
+.social-media a:hover {
+    color: #ff6347;
+}
+
+
+/* you need media queries for responsiveness bozo */
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description,
+    .order-button-text,
+    .about-title,
+    .contact-title {
+        font-size: 1.25rem;
+    }
+
+    .how-it-works-title,
+    .features-title {
+        font-size: 1.75rem;
+    }
+
+    .how-it-works-description,
+    .features-description {
+        font-size: 1.25rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section,
+    .how-it-works-section,
+    .features-section {
+        padding: 1rem;
+    }
+
+    .how-it-works-content,
+    .features-content {
+        flex-direction: column;
+    }
+
+    .how-it-works-item,
+    .features-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-it-works-image-left,
+    .how-it-works-image-right,
+    .features-image-left,
+    .features-image-right {
+        width: 80%;
+        height: 200px;
+        margin: 1rem auto;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-button,
+    .github-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .title-holder {
+        width: 12rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-description,
+    .order-button-text,
+    .about-title,
+    .contact-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .how-it-works-title,
+    .features-title {
+        font-size: 1.5rem;
+    }
+
+    .how-it-works-description,
+    .features-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 1rem 2rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .background-ellipse {
+        top: 640px;
+        right: 0;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-description,
+    .order-button-text,
+    .about-title,
+    .contact-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .how-it-works-title,
+    .features-title {
+        font-size: 1.25rem;
+    }
+
+    .how-it-works-description,
+    .features-description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .footer-container {
+        gap: 1rem;
+    }
+
+    .background-ellipse {
+        display: none;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .email-button,
+    .github-button {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
